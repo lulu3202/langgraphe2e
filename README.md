@@ -9,7 +9,7 @@ app_file: app.py
 pinned: false
 ---
 
-# Project Setup Steps
+# Project Setup
 
 ## Steps
 
@@ -111,8 +111,59 @@ from src.langgraphagenticai.ui.streamlitui.display_result import DisplayResultSt
 ```sh
 streamlit run app.py
 ```
+# 🚀 CI/CD Setup: GitHub to Hugging Face  
 
+## 🔹 1. Set Up CI/CD Between GitHub and Hugging Face  
+- **Create** a new Space on Hugging Face.  
+- A **unique URL** will be generated for your Space.  
+- Open **`main.yml`** and update the **last line**:  
+  - Replace it with your Hugging Face Space **unique URL** (it will include `$HF_TOKEN`).  
+- **Update the README**:  
+  - The **first section** of the README should contain the **Streamlit configuration**.  
 
+## 🔹 2. Deploy on Streamlit  
+- **Go to the Streamlit website** and add your GitHub repo and branch details.  
+- Deployment example:  
+  👉 [LangGraph Streamlit App](https://langgraphe2e-4cg4bxcc3ysrhwrmregluy.streamlit.app/)  
+
+---
+
+Your CI/CD pipeline should now be set up for seamless deployment! 🚀✨  
+
+---
+# Chatbot with Tool Integration  
+
+## 📌 Steps to Implement  
+
+### 🔹 1. Add a Search Tool  
+- Navigate to the `TOOLS` folder.  
+- **Create** a new file: `search_tool.py`.  
+- **Add Tavily** as a tool inside this file.  
+
+### 🔹 2. Create a Chatbot with Tool Node  
+- Navigate to the `NODES` folder.  
+- **Create** a new file: `Chatbot_with_tool_node.py`.  
+- Implement chatbot logic with tool integration inside this file.  
+
+### 🔹 3. Modify Graph Builder  
+- Open `graph_builder.py`.  
+- **Edit** the file to include tool functionality.  
+
+### 🔹 4. Update the UI  
+- Modify the following UI components:  
+  - `Load_streamlit_ui.py`  
+  - `uiconfig.ini`  
+  - `display_results.py`  
+
+### 🔹 5. Run the Application  
+To start the chatbot, run the following command:  
+streamlit run app.py
+
+🚀 Now your chatbot with tool integration should be live!
+
+## Ouput Screenshots 
+Streamlit UI interface showcasing chatbot utilizing tools
+![alt text](image.png)
 
 
 
