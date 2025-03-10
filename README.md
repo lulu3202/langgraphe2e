@@ -1,3 +1,14 @@
+---
+title: LanggraphAgenticAI
+emoji: 🐨
+colorFrom: blue
+colorTo: red
+sdk: streamlit
+sdk_version: 1.42.0
+app_file: app.py
+pinned: false
+---
+
 # Project Setup Steps
 
 ## Steps
@@ -101,16 +112,7 @@ from src.langgraphagenticai.ui.streamlitui.display_result import DisplayResultSt
 streamlit run app.py
 ```
 
----
-title: LanggraphAgenticAI
-emoji: 🐨
-colorFrom: blue
-colorTo: red
-sdk: streamlit
-sdk_version: 1.42.0
-app_file: app.py
-pinned: false
----
+
 
 
 
